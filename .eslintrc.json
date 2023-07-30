@@ -1,0 +1,13 @@
+{
+  "env": { "browser": true, "es2020": true },
+  "extends": ["next/core-web-vitals", "@paperfeed/eslint-config/next/no-conflict"],
+  "plugins": ["react-refresh"],
+  "ignorePatterns": ["dist", ".eslintrc.json"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ]
+  }
+}

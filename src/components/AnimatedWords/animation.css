@@ -1,0 +1,26 @@
+@keyframes FadeToRight {
+    0% {
+        transform: scaleX(1) translateX(0px);
+        opacity: 0;
+    }
+    40% {
+        transform: scaleX(1) translateX(0px);
+        opacity: 0.5;
+    }
+    80% {
+        transform: scaleX(1) translateX(0px);
+        opacity: 1;
+    }
+    90% {
+        transform: scaleX(1) translateX(150px);
+        opacity: 0.2;
+    }
+    95% {
+        transform: scaleX(1.05) translateX(225px);
+        opacity: 0.05;
+    }
+    100% {
+        transform: scaleX(1.1) translateX(300px);
+        opacity: 0;
+    }
+}
