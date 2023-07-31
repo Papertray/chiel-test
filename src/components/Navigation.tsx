@@ -13,11 +13,11 @@ const content = [
 
 export const Navigation: FC = () => {
     return (
-        <div className="flex flex-row justify-between bg-white w-full">
+        <div className="flex flex-col sm:flex-row justify-between bg-white w-full">
             <Link className="justify-center self-center" to="/">
-              <img alt="Samsung logo" className="ml-4 h-8 w-32" src="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/gnb-desktop-120x32.png"/>
+              <img alt="Samsung logo" className="mt-4 sm:mt-0 sm:ml-4 h-8 w-32" src="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/gnb-desktop-120x32.png"/>
             </Link>
-            <div className="flex-end flex m-4 justify-end overflow-hidden items-center text-black">
+            <div className="flex-end flex m-4 justify-between sm:justify-end overflow-hidden items-center text-black">
                 {content.map((element, i) => (
                     <NavigationItem key={i} {...element} />
                 ))}

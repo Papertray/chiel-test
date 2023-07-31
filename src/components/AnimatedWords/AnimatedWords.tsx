@@ -22,7 +22,7 @@ export const AnimatedWords: React.FC<AnimatedWordsProps> = ({words}) => {
     return (
         <div className="inline-block">
             <div
-              className="text-4xl md:text-6xl text-black"
+              className="text-4xl md:text-6xl text-white"
               onAnimationIteration={resetAnimationWithNewWord}
               style={animationStyling}
             >

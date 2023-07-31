@@ -1,16 +1,17 @@
-import {FC,} from 'react'
+import {FC} from 'react'
 import {ImSpinner8} from "react-icons/im";
 
 interface SpinnerProps {
   className?: string,
+  classNameIcon?: string
 }
 
-export const Spinner: FC<SpinnerProps> = ({className}) => {
+export const Spinner: FC<SpinnerProps> = ({className, classNameIcon}) => {
   return (
     <div
-      className={`flex justify-center self-center ${className}`}
+      className={`flex justify-center items-center self-center ${className}`}
     >
-      <ImSpinner8 className="animate-spin"/>
+      <ImSpinner8 className={`animate-spin ${classNameIcon}`}/>
     </div>
   )
 }
